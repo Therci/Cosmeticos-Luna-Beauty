@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Beauty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-pink-50 bg-clouds-texture text-gray-800 font-sans">
+  <header class="sticky top-0 bg-pink-100 bg-dots-texture shadow-md z-50 animate-fade-in-down animate-slide-in-right">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="text-3xl font-bold text-pink-700 cursor-pointer select-none font-cursive animate-wiggle">Luna Beauty</div>
+      <ul class="flex gap-8 text-pink-700 font-semibold items-center">
+        <li><a href="#products" class="menu-link hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded transition-colors duration-300 animate-fade-in border-b-2 border-transparent hover:border-pink-600">Produtos</a></li>
+        <li><a href="#categories" class="menu-link hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded transition-colors duration-300 animate-fade-in delay-50 border-b-2 border-transparent hover:border-pink-600 animate-slide-in-left">Categorias</a></li>
+        <li><a href="#about" class="menu-link hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded transition-colors duration-300 animate-fade-in delay-100 border-b-2 border-transparent hover:border-pink-600 animate-slide-in-left">Sobre Nós</a></li>
+        <li><a href="#testimonials" class="menu-link hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded transition-colors duration-300 animate-fade-in delay-150 border-b-2 border-transparent hover:border-pink-600 animate-slide-in-left">Depoimentos</a></li>
+        <li><a href="#faq" class="menu-link hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded transition-colors duration-300 animate-fade-in delay-200 border-b-2 border-transparent hover:border-pink-600 animate-slide-in-left">FAQ</a></li>
+        <li><a href="#newsletter" class="menu-link hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded transition-colors duration-300 animate-fade-in delay-250 border-b-2 border-transparent hover:border-pink-600 animate-slide-in-left">Newsletter</a></li>
+        <li>
+          <button id="cart-btn" aria-label="Abrir carrinho" class="relative hover:text-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-600 rounded animate-fade-in delay-300 animate-bounce-in animate-pulse-shadow">
+            Carrinho
+            <span id="cart-count" class="absolute -top-2 -right-4 bg-pink-600 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-semibold animate-pulse">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="w-full bg-gradient-to-r from-pink-200 to-pink-400 text-pink-900 text-center py-2 text-sm font-bold tracking-wide flex items-center justify-center gap-2 animate-fade-in-up animate-slide-in-right">
+      <span class="inline-block bg-white rounded-full px-3 py-1 shadow text-pink-600 mr-2 animate-bounce">FRETE GRÁTIS</span>
+      nas compras acima de R$150 | Use o cupom <span class="bg-pink-100 rounded px-2 py-1 ml-1 font-mono">LUNA10</span> para 10% OFF
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <section class="bg-gradient-to-r from-pink-400 to-pink-600 text-white py-20 px-6 text-center rounded-lg shadow-lg bg-paper-texture mb-16 animate-fade-in-up animate-bounce-in">
+      <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg animate-fade-in animate-slide-in-left">Sua Beleza, Nosso Cuidado</h1>
+      <p class="text-xl mb-8 max-w-3xl mx-auto drop-shadow-md animate-fade-in delay-100 animate-slide-in-right">
+        Cosméticos naturais e de alta qualidade para realçar sua beleza todos os dias.
+      </p>
+      <a href="#products" class="inline-block bg-white text-pink-600 font-bold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition animate-bounce delay-200 animate-pulse-shadow">
+        Conheça nossos produtos
+      </a>
+    </section>
+    <section id="categories" class="mb-16 animate-fade-in-up animate-slide-in-left bg-white bg-clouds-texture rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 text-center animate-fade-in animate-wiggle">Categorias</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="bg-white bg-paper-texture rounded-lg shadow-lg p-6 w-48 flex flex-col items-center hover:scale-105 transition-transform animate-bounce-in animate-pulse-shadow">
+          <img src="https://placehold.co/80x80/ffeef4/3a2c2a?text=Skin" alt="Skincare" class="mb-3 rounded-full shadow animate-slide-in-left">
+          <span class="font-semibold text-pink-700 animate-fade-in">Skincare</span>
+        </div>
+        <div class="bg-white bg-paper-texture rounded-lg shadow-lg p-6 w-48 flex flex-col items-center hover:scale-105 transition-transform animate-bounce-in animate-pulse-shadow delay-100">
+          <img src="https://placehold.co/80x80/ffeef4/3a2c2a?text=Make" alt="Maquiagem" class="mb-3 rounded-full shadow animate-slide-in-right">
+          <span class="font-semibold text-pink-700 animate-fade-in">Maquiagem</span>
+        </div>
+        <div class="bg-white bg-paper-texture rounded-lg shadow-lg p-6 w-48 flex flex-col items-center hover:scale-105 transition-transform animate-bounce-in animate-pulse-shadow delay-200">
+          <img src="https://placehold.co/80x80/ffeef4/3a2c2a?text=Kit" alt="Kits" class="mb-3 rounded-full shadow">
+          <span class="font-semibold text-pink-700 animate-fade-in">Kits</span>
+        </div>
+      </div>
+    </section>
+    <section class="mb-16 animate-fade-in-up delay-100">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 text-center">Como Funciona</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-center">
+          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-4 shadow-lg animate-bounce">
+            <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="font-semibold text-lg text-pink-700 mb-2">Escolha seus produtos</h3>
+          <p class="text-gray-600 text-center">Navegue por nossas categorias e encontre o que combina com você.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-4 shadow-lg animate-bounce delay-100">
+            <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3z"/></svg>
+          </div>
+          <h3 class="font-semibold text-lg text-pink-700 mb-2">Adicione ao carrinho</h3>
+          <p class="text-gray-600 text-center">Monte seu pedido e aproveite descontos exclusivos.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-4 shadow-lg animate-bounce delay-200">
+            <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3 class="font-semibold text-lg text-pink-700 mb-2">Receba em casa</h3>
+          <p class="text-gray-600 text-center">Entrega rápida, segura e com todo carinho Luna Beauty.</p>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="mb-20">
+      <h2 class="text-4xl font-bold text-pink-700 mb-10 text-center animate-fade-in">Produtos em Destaque</h2>
+      <!-- Carrossel de produtos -->
+      <div class="w-full max-w-5xl mx-auto">
+        <div id="carousel" class="relative bg-dots-texture bg-white rounded-lg p-8 shadow-md overflow-hidden">
+          <div class="flex transition-transform duration-500 ease-in-out" id="carousel-track" style="transform: translateX(0);">
+            <!-- Produto 1 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #e0f7fa 60%, #fce4ec 100%);">
+                <img src="images/serum-hidratante.jpg" alt="Sérum Hidratante" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Sérum Hidratante</h3>
+              <p class="text-gray-600 mt-1">Hidratação intensa e brilho natural para sua pele.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 89,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Sérum Hidratante" 
+                data-price="89.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #ffe0e6 60%, #ffd6c8 100%);">
+                <img src="images/batom-salmao-rose.jpg" alt="Batom Salmão Rosé" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Batom Salmão Rosé</h3>
+              <p class="text-gray-600 mt-1">Cores vibrantes e longa duração para realçar sua beleza.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 49,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Batom Salmão Rosé" 
+                data-price="49.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #e3e6f3 60%, #f8e1f4 100%);">
+                <img src="images/creme-noturno.jpg" alt="Creme Noturno" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Creme Noturno</h3>
+              <p class="text-gray-600 mt-1">Nutrição profunda para todos os tipos de pele.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 69,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Creme Noturno" 
+                data-price="69.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #fffbe7 60%, #ffe4ec 100%);">
+                <img src="images/sabonete-facial.jpg" alt="Sabonete Facial" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Sabonete Facial</h3>
+              <p class="text-gray-600 mt-1">Limpeza suave e refrescante para o rosto.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 29,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Sabonete Facial" 
+                data-price="29.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #e0f7fa 60%, #e1f8e7 100%);">
+                <img src="images/tonico-revitalizante.jpg" alt="Tônico Revitalizante" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Tônico Revitalizante</h3>
+              <p class="text-gray-600 mt-1">Revitaliza e equilibra o pH da pele.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 39,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Tônico Revitalizante" 
+                data-price="39.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #e0f7fa 60%, #e0f2f1 100%);">
+                <img src="images/gel-de-limpeza.jpg" alt="Gel de Limpeza" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Gel de Limpeza</h3>
+              <p class="text-gray-600 mt-1">Limpeza profunda e refrescante para o rosto.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 34,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Gel de Limpeza" 
+                data-price="34.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #fffbe7 60%, #ffe0b2 100%);">
+                <img src="images/oleo-facial.jpg" alt="Óleo Facial" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Óleo Facial</h3>
+              <p class="text-gray-600 mt-1">Nutrição e luminosidade para a pele.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 59,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Óleo Facial" 
+                data-price="59.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #fbe9e7 60%, #fffde7 100%);">
+                <img src="images/esfoliante-facial.jpg" alt="Esfoliante Facial" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Esfoliante Facial</h3>
+              <p class="text-gray-600 mt-1">Remove impurezas e renova a pele.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 99,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Esfoliante Facial" 
+                data-price="99.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+
+            <!-- Produto 9 -->
+            <div class="carousel-product card product-card flex-shrink-0 px-2">
+              <div class="aspect-[2/3] w-full flex items-center justify-center rounded-lg mb-4 shadow-md" style="background: linear-gradient(135deg, #e0f7fa 60%, #e3f2fd 100%);">
+                <img src="images/agua-micelar.jpg" alt="Água Micelar" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <h3 class="text-lg font-semibold text-pink-700">Água Micelar</h3>
+              <p class="text-gray-600 mt-1">Limpa, demaquila e tonifica suavemente.</p>
+              <p class="text-pink-700 font-bold mt-2">R$ 24,90</p>
+              <button 
+                class="btn-primary mt-4 w-full add-to-cart" 
+                data-name="Água Micelar" 
+                data-price="24.90">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+          <!-- Controles -->
+          <button id="carousel-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-pink-200 text-pink-700 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-pink-300 transition z-10">&lt;</button>
+          <button id="carousel-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-200 text-pink-700 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-pink-300 transition z-10">&gt;</button>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 mb-16 animate-fade-in-up">
+      <div class="bg-gradient-to-l from-pink-200 via-white to-pink-100 rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between p-8 gap-8 bg-paper-texture">
+        <div class="flex-1">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-pink-700 mb-2 font-cursive">Promoção Especial</h2>
+          <p class="text-lg text-gray-700 mb-4">Ganhe <span class="font-bold text-pink-600">10% OFF</span> na sua primeira compra! Use o cupom <span class="bg-pink-100 px-2 py-1 rounded font-mono text-pink-700">LUNA10</span></p>
+          <a href="#products" class="inline-block bg-pink-600 text-white font-bold px-6 py-2 rounded-full shadow hover:bg-pink-700 transition">Aproveitar Oferta</a>
+        </div>
+        <img src="https://placehold.co/180x180/ffeef4/3a2c2a?text=Promo" alt="Promoção Luna Beauty" class="w-40 h-40 object-contain rounded-full shadow-md">
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 mb-16 animate-fade-in-up" id="diferenciais">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white bg-dots-texture rounded-lg p-8 shadow-md">
+        <div class="flex flex-col items-center text-center">
+          <img src="https://img.icons8.com/ios-filled/50/4f0a2b/leaf.png" alt="Vegano" class="w-12 h-12 mb-2 animate-pulse"/>
+          <span class="font-bold text-pink-700">Vegano</span>
+          <span class="text-gray-600 text-sm">Sem ingredientes de origem animal</span>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <img src="https://img.icons8.com/ios-filled/50/4f0a2b/rabbit.png" alt="Cruelty Free" class="w-12 h-12 mb-2 animate-pulse delay-100"/>
+          <span class="font-bold text-pink-700">Cruelty-Free</span>
+          <span class="text-gray-600 text-sm">Não testado em animais</span>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <img src="https://img.icons8.com/ios-filled/50/4f0a2b/checked-2--v1.png" alt="Dermatologicamente Testado" class="w-12 h-12 mb-2 animate-pulse delay-200"/>
+          <span class="font-bold text-pink-700">Dermatologicamente Testado</span>
+          <span class="text-gray-600 text-sm">Seguro para todos os tipos de pele</span>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-12 h-12 mb-2 animate-pulse delay-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="23" stroke="#4f0a2b" stroke-width="2" fill="#e0f7e9"/><path d="M24 10l4 7h-8l4-7zm-8 13l-7 4 7 4v-8zm16 0v8l7-4-7-4zm-8 7a7 7 0 1 0 0-14 7 7 0 0 0 0 14z" fill="#4f0a2b"/></svg>
+          <span class="font-bold text-pink-700">Eco Friendly</span>
+          <span class="text-gray-600 text-sm">Embalagens recicláveis</span>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="max-w-7xl mx-auto px-6 mb-16 animate-fade-in-up">
+      <div class="flex flex-col md:flex-row items-center gap-10 bg-white bg-paper-texture rounded-lg shadow-md p-8">
+        <img src="https://placehold.co/320x320/ffeef4/3a2c2a?text=Equipe" alt="Equipe Luna Beauty" class="w-64 h-64 object-cover rounded-xl shadow-md mb-6 md:mb-0 animate-fade-in"/>
+        <div>
+          <h2 class="text-3xl font-bold text-pink-700 mb-4 font-cursive">Sobre a Luna Beauty</h2>
+          <p class="text-gray-700 text-lg mb-4">Inspirada pela natureza e pela ciência, a Luna Beauty nasceu para oferecer cosméticos de alta performance, seguros e gentis com sua pele e com o planeta. Nossa missão é realçar sua beleza natural com fórmulas inovadoras, veganas e cruelty-free.</p>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Ingredientes naturais e selecionados</li>
+            <li>Compromisso com sustentabilidade</li>
+            <li>Produtos desenvolvidos por especialistas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="max-w-7xl mx-auto px-6 mb-16 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-pink-700 text-center mb-8 font-cursive">O que dizem nossas clientes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white bg-dots-texture rounded-lg shadow-md p-6 flex flex-col items-center animate-fade-in-up">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente 1" class="w-16 h-16 rounded-full mb-3 border-4 border-pink-200"/>
+          <p class="text-gray-700 italic mb-2">“Minha pele nunca esteve tão radiante! Os produtos Luna Beauty são incríveis.”</p>
+          <span class="font-bold text-pink-700">Juliana S.</span>
+        </div>
+        <div class="bg-white bg-dots-texture rounded-lg shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-100">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente 2" class="w-16 h-16 rounded-full mb-3 border-4 border-pink-200"/>
+          <p class="text-gray-700 italic mb-2">“Amei saber que são veganos e não testam em animais. Recomendo de olhos fechados!”</p>
+          <span class="font-bold text-pink-700">Camila R.</span>
+        </div>
+        <div class="bg-white bg-dots-texture rounded-lg shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-200">
+          <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Cliente 3" class="w-16 h-16 rounded-full mb-3 border-4 border-pink-200"/>
+          <p class="text-gray-700 italic mb-2">“Entrega rápida, embalagem linda e resultado visível. Luna Beauty virou minha marca favorita!”</p>
+          <span class="font-bold text-pink-700">Renata M.</span>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter" class="max-w-7xl mx-auto px-6 mb-16 animate-fade-in-up">
+      <div class="bg-gradient-to-r from-pink-100 via-white to-pink-200 rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between p-8 gap-8 bg-paper-texture">
+        <div class="flex-1">
+          <h2 class="text-2xl md:text-3xl font-bold text-pink-700 mb-2 font-cursive">Receba novidades e ofertas</h2>
+          <p class="text-gray-700 mb-4">Cadastre-se e fique por dentro dos lançamentos, promoções e dicas de beleza Luna Beauty.</p>
+          <form class="flex flex-col sm:flex-row gap-4">
+            <input type="email" required placeholder="Seu e-mail" class="px-4 py-2 rounded-full border border-pink-300 focus:ring-2 focus:ring-pink-400 outline-none w-full sm:w-auto"/>
+            <button type="submit" class="bg-pink-600 text-white font-bold px-6 py-2 rounded-full shadow hover:bg-pink-700 transition">Cadastrar</button>
+          </form>
+        </div>
+        <img src="https://placehold.co/180x180/ffeef4/3a2c2a?text=Newsletter" alt="Newsletter Luna Beauty" class="w-40 h-40 object-contain rounded-full shadow-md">
+      </div>
+    </section>
+    <div class="fixed bottom-6 right-6 z-50 animate-fade-in-up">
+      <div class="flex items-center gap-2 bg-white bg-dots-texture border-2 border-pink-200 rounded-full px-4 py-2 shadow-lg">
+        <img src="https://img.icons8.com/ios-filled/32/4f0a2b/leaf.png" alt="Vegano" class="w-8 h-8 animate-pulse"/>
+        <span class="font-bold text-pink-700 text-sm">Vegano & Cruelty-Free</span>
+      </div>
+    </div>
+    <footer class="bg-pink-100 bg-paper-texture text-pink-700 text-center py-8 font-semibold animate-fade-in-up mt-12 border-t border-pink-200">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-6">
+        <div>
+          <p>© 2025 Luna Beauty. Todos os direitos reservados.</p>
+          <div class="flex gap-3 mt-2 justify-center md:justify-start">
+            <a href="#" class="hover:underline">Política de Privacidade</a>
+            <a href="#" class="hover:underline">Termos de Uso</a>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center">
+          <a href="#" aria-label="Instagram" class="hover:text-pink-900"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 2.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm6 1.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg></a>
+          <a href="#" aria-label="WhatsApp" class="hover:text-green-600"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.205 5.077 4.372.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.007-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.617h-.001a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.656-.235-.374A9.86 9.86 0 0 1 0 12.013C0 5.373 5.373 0 12.002 0 18.627 0 24 5.373 24 12.013c0 6.627-5.373 12-11.998 12zm6.813-17.186C18.064 3.605 15.155 1.5 12.002 1.5 6.201 1.5 1.5 6.201 1.5 12.013c0 1.885.492 3.733 1.425 5.354l.221.393-.662 2.427 2.482-.652.381.226a8.37 8.37 0 0 0 4.155 1.137c5.8 0 10.5-4.701 10.5-10.484 0-2.252-.876-4.362-2.466-6.027z"/></svg></a>
+          <a href="#" aria-label="TikTok" class="hover:text-pink-900"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.84 8 9.8v-6.93h-2.4v-2.87H10V9.5c0-2.37 1.42-3.68 3.6-3.68 1.04 0 2.13.19 2.13.19v2.34h-1.2c-1.18 0-1.53.73-1.53 1.48v1.78h2.6l-.42 2.87h-2.18v6.93c4.56-.96 8-4.96 8-9.8 0-5.52-4.48-10-10-10z"/></svg></a>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://placehold.co/60x60/ffeef4/3a2c2a?text=Vegano" alt="Selo Vegano" class="rounded-full border-2 border-pink-300">
+          <span class="text-xs">Site 100% seguro</span>
+        </div>
+      </div>
+    </footer>
+    <!-- Carrinho Modal -->
+    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+      <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md relative">
+        <button id="close-cart" class="absolute top-2 right-2 text-pink-600 text-2xl font-bold">&times;</button>
+        <h2 class="text-2xl font-bold text-pink-700 mb-4">Seu Carrinho</h2>
+        <div id="cart-items" class="mb-4 text-gray-700">
+          <p class="text-center text-gray-400">Seu carrinho está vazio.</p>
+        </div>
+        <div class="flex justify-between items-center font-bold text-lg mb-4">
+          <span>Total:</span>
+          <span id="cart-total">R$ 0,00</span>
+        </div>
+        <button class="bg-pink-600 text-white px-4 py-2 rounded-full w-full font-bold hover:bg-pink-700 transition">Finalizar Compra</button>
+      </div>
+    </div>
+    <style>
+      .btn-primary {
+        @apply bg-pink-600 text-white font-bold px-4 py-2 rounded-full shadow hover:bg-pink-700 transition;
+      }
+    </style>
+  </body>
+  <script>
+    // Script para funcionalidade do carrinho
+    let cart = [];
+    const cartBtn = document.getElementById('cart-btn');
+    const cartModal = document.getElementById('cart-modal');
+    const closeCartBtn = document.getElementById('close-cart');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const cartCount = document.getElementById('cart-count');
+
+    // Função para atualizar o contador do carrinho
+    function updateCartCount() {
+      const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+      cartCount.innerText = totalItems;
+    }
+
+    // Função para atualizar o conteúdo do modal do carrinho
+    function updateCartModal() {
+      cartItemsContainer.innerHTML = '';
+      let total = 0;
+      cart.forEach(item => {
+        total += item.price * item.quantity;
+        const div = document.createElement('div');
+        div.className = 'flex justify-between items-center mb-2';
+        div.innerHTML = `
+          <span>${item.name} (${item.quantity})</span>
+          <span>R$ ${(item.price * item.quantity).toFixed(2)}</span>
+        `;
+        cartItemsContainer.appendChild(div);
+      });
+      cartTotal.innerText = `R$ ${total.toFixed(2)}`;
+    }
+
+    // Evento para abrir o modal do carrinho
+    cartBtn.addEventListener('click', () => {
+      cartModal.classList.remove('hidden');
+      updateCartModal();
+    });
+
+    // Evento para fechar o modal do carrinho
+    closeCartBtn.addEventListener('click', () => {
+      cartModal.classList.add('hidden');
+    });
+
+    // Evento para adicionar produtos ao carrinho
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const productCard = e.target.closest('.product-card');
+        const productName = productCard.querySelector('h3').innerText;
+        const productPrice = parseFloat(productCard.querySelector('p.text-pink-700').innerText.replace('R$ ', '').replace(',', '.'));
+        
+        const existingProduct = cart.find(item => item.name === productName);
+        if (existingProduct) {
+          existingProduct.quantity++;
+        } else {
+          cart.push({ name: productName, price: productPrice, quantity: 1 });
+        }
+
+        updateCartCount();
+        alert(`${productName} foi adicionado ao carrinho!`);
+      });
+    });
+  </script>
+</html>
